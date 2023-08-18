@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Add elevation to the ViewPager2 -->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/_1sdp"
+        tools:layout_editor_absoluteX="@dimen/_0sdp"
+        tools:layout_editor_absoluteY="@dimen/_0sdp" />
+
+    <ImageView
+        android:id="@+id/solelogo"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_181sdp"
+        android:layout_marginStart="@dimen/_55sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_1sdp"
+        android:contentDescription="solelogo"
+        android:elevation="@dimen/_2sdp"
+        android:src="@drawable/solemalangit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /> <!-- Add a higher elevation to the ImageView -->
+
+    <!-- ... Your existing layout code ... -->
+
+    <TextView
+        android:id="@+id/solemate"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_47ssp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:elevation="@dimen/_2sdp"
+        android:fontFamily="@font/montserratalternatessemibolditalic"
+        android:text="FIND YOUR PERFECT SOLE MATE"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/solelogo" />
+
+    <ImageButton
+        android:id="@+id/getStartedButton"
+        android:layout_width="@dimen/_208sdp"
+        android:layout_height="@dimen/_63sdp"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:background="@android:color/transparent"
+        android:elevation="@dimen/_2sdp"
+        android:src="@drawable/getstartedbtn"
+        android:contentDescription="button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/solemate" />
+
+    <!-- ... Your existing layout code ... -->
+
+
+    <LinearLayout
+        android:id="@+id/indicatorLayout"
+        android:layout_width="@dimen/_39sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewPager"
+        app:layout_constraintVertical_bias="1.0"
+        android:elevation="@dimen/_3sdp"> <!-- Add a higher elevation to the indicatorLayout -->
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

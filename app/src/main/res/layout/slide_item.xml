@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- slide_item.xml -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bannerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_246sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_8sdp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/banner_item_background_modified"
+        android:scaleType="center" />
+
+    <Button
+        android:id="@+id/shopNowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_108sdp"
+        android:layout_marginRight="@dimen/_55sdp"
+        android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/helveticanowtextbold"
+        android:text="Shop Now"
+        android:textSize="@dimen/_11sdp" />
+
+</FrameLayout>

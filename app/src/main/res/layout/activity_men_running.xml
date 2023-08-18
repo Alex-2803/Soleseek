@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="@dimen/_62sdp"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="#00000000"
+        android:contentDescription="Back Button"
+        android:src="@drawable/baseline_arrow_back_ios_new_25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/categoriesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Running"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_19ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/backButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <ImageButton
+        android:id="@+id/adidas_yeezy_Btn"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_111sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_399sdp"
+        android:background="@drawable/btn_rounded"
+        android:contentDescription="basketball_1"
+        android:src="@drawable/adidas_yeezy"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_25sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="H,250:125.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/adidas_yeezy_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adidas Yeezy 350"
+        android:textSize="@dimen/_14ssp"
+        android:fontFamily="@font/helveticanowtextbold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/adidas_yeezy_Btn"
+        app:layout_constraintStart_toStartOf="@id/adidas_yeezy_Btn"
+        app:layout_constraintEnd_toEndOf="@id/adidas_yeezy_Btn"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

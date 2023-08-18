@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nike_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="15:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <ImageView
+        android:id="@+id/rectangleShape"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="@dimen/_62sdp"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@color/orange"
+        android:contentDescription="Back Button"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/nike_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:src="@drawable/nikelogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/backButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+
+
+    <ImageButton
+        android:id="@+id/nikebrandair_Btn"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_111sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/btn_rounded"
+        android:contentDescription="basketball_1"
+        android:paddingBottom="@dimen/_25sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:src="@drawable/nike_air"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nike_logo" />
+
+    <TextView
+        android:id="@+id/nikebrandair_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nike Air Force 1"
+        android:textSize="@dimen/_14ssp"
+        android:fontFamily="@font/helveticanowtextbold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/nikebrandair_Btn"
+        app:layout_constraintStart_toStartOf="@id/nikebrandair_Btn"
+        app:layout_constraintEnd_toEndOf="@id/nikebrandair_Btn"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp" />
+
+    <!-- Second Button and Text -->
+    <ImageButton
+        android:id="@+id/nikebrandmamba_Btn"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_111sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:background="@drawable/btn_rounded"
+        android:contentDescription="second_button"
+        android:paddingBottom="@dimen/_25sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:src="@drawable/nike_mamba"
+        android:paddingLeft="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/nikebrandair_Btn"
+        app:layout_constraintTop_toTopOf="@id/nikebrandair_Btn" />
+
+    <!-- Third Button and Text -->
+
+
+    <!-- Fourth Button and Text -->
+
+    <TextView
+        android:id="@+id/nikebrandmamba_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:fontFamily="@font/helveticanowtextbold"
+        android:text="Nike Mamba Fury"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/nikebrandmamba_Btn"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@id/nikebrandmamba_Btn"
+        app:layout_constraintTop_toBottomOf="@id/nikebrandmamba_Btn" />
+
+    <ImageButton
+        android:id="@+id/nikebrandgrinch_Btn"
+        android:layout_width="@dimen/_122sdp"
+        android:layout_height="@dimen/_111sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/btn_rounded"
+        android:contentDescription="third_button"
+        android:paddingTop="@dimen/_50sdp"
+        android:paddingRight="@dimen/_40sdp"
+        android:paddingBottom="@dimen/_25sdp"
+        android:src="@drawable/nike_grinch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nikebrandair_Text" />
+
+    <TextView
+        android:id="@+id/nikebrandgrinch_Text"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/helveticanowtextbold"
+        android:text="Nike Kobe Bryant Grinch"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/nikebrandgrinch_Btn"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="@id/nikebrandgrinch_Btn"
+        app:layout_constraintTop_toBottomOf="@id/nikebrandgrinch_Btn" />
+
+    <ImageButton
+        android:id="@+id/nikebrandzoom_Btn"
+        android:layout_width="@dimen/_122sdp"
+        android:layout_height="@dimen/_111sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:background="@drawable/btn_rounded"
+        android:contentDescription="fourth_button"
+        android:paddingBottom="@dimen/_45sdp"
+        android:paddingRight="@dimen/_50sdp"
+        android:src="@drawable/nike_zoom"
+        android:paddingLeft="@dimen/_20sdp"
+        app:layout_constraintStart_toEndOf="@id/nikebrandgrinch_Btn"
+        app:layout_constraintTop_toTopOf="@id/nikebrandgrinch_Btn" />
+
+    <TextView
+        android:id="@+id/nikebrandzoom_Text"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/helveticanowtextbold"
+        android:text="Nike Zoom Air Pegasus"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/nikebrandzoom_Btn"
+        app:layout_constraintStart_toStartOf="@id/nikebrandzoom_Btn"
+        app:layout_constraintTop_toBottomOf="@id/nikebrandzoom_Btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- frame_34 strings -->
+
+    <string name="app_name">Soleseek</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="find_your_perfect_sole_mate_string">Find Your Perfect Sole Mate</string>
+    <string name="get_started_string">Get Started</string>
+    <string name="ole_eeker_string">ole eeker</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/indicator_dot.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/indicator_dot_color" /> <!-- Change color to your desired indicator dot color -->
+    <size
+        android:width="@dimen/indicator_dot_size"
+        android:height="@dimen/indicator_dot_size" />
+    <stroke
+        android:color="@color/indicator_dot_stroke_color"
+        android:width="@dimen/indicator_dot_stroke_width" /> <!-- Change color and width for the dot stroke -->
+</shape>

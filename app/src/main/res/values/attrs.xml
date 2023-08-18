@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SliderView">
+        <attr name="sliderAnimationDuration" format="integer" />
+        <attr name="sliderAutoCycleDirection" format="enum">
+            <enum name="forward" value="0" />
+            <enum name="backward" value="1" />
+            <enum name="back_and_forth" value="2" />
+        </attr>
+        <attr name="sliderAutoCycleEnabled" format="boolean" />
+        <attr name="sliderIndicatorAnimationDuration" format="integer" />
+        <attr name="sliderIndicatorGravity" format="integer" />
+        <attr name="sliderIndicatorMargin" format="dimension" />
+        <attr name="sliderIndicatorOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="sliderIndicatorPadding" format="dimension" />
+        <attr name="sliderIndicatorRadius" format="dimension" />
+        <attr name="sliderIndicatorSelectedColor" format="color" />
+        <attr name="sliderIndicatorUnselectedColor" format="color" />
+        <attr name="sliderScrollTimeInSec" format="integer" />
+        <attr name="sliderStartAutoCycle" format="boolean" />
+    </declare-styleable>
+</resources>

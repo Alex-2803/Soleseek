@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".brand_puma">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/puma_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="10:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <ImageView
+        android:id="@+id/rectangleShape"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/orange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="@dimen/_62sdp"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_28sdp"
+        android:background="@color/orange"
+        android:contentDescription="Back Button"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <ImageView
+        android:id="@+id/puma_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:src="@drawable/pumalogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/backButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <ImageButton
+        android:id="@+id/pumabrandkarmen_Btn"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_111sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/btn_rounded"
+        android:contentDescription="basketball_1"
+        android:paddingBottom="@dimen/_25sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:src="@drawable/puma_karmen"
+        android:paddingTop="@dimen/_25sdp"
+        android:paddingLeft="@dimen/_25sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/puma_logo" />
+
+    <TextView
+        android:id="@+id/pumabrandkarmen_Text"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:fontFamily="@font/helveticanowtextbold"
+        android:text="Puma Karmen Rebelle Trainers"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/pumabrandkarmen_Btn"
+        app:layout_constraintStart_toStartOf="@id/pumabrandkarmen_Btn"
+        app:layout_constraintTop_toBottomOf="@id/pumabrandkarmen_Btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

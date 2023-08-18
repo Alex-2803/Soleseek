@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".brand_adidas">
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/adidas_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="13:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <ImageView
+        android:id="@+id/rectangleShape"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/orange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="@dimen/_62sdp"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@color/orange"
+        android:contentDescription="Back Button"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/adidas_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:src="@drawable/adidaslogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/backButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <ImageButton
+        android:id="@+id/adidasbrandsuperstar_Btn"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_111sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/btn_rounded"
+        android:contentDescription="basketball_1"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_25sdp"
+        android:src="@drawable/adida_superstar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adidas_logo" />
+
+    <!-- Second Button and Text -->
+    <TextView
+        android:id="@+id/adidasbrandsuperstar_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/helveticanowtextbold"
+        android:text="Adidas Superstar"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/adidasbrandsuperstar_Btn"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@id/adidasbrandsuperstar_Btn"
+        app:layout_constraintTop_toBottomOf="@id/adidasbrandsuperstar_Btn" />
+
+    <ImageButton
+        android:id="@+id/adidasbrandyeezy_Btn"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_111sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:background="@drawable/btn_rounded"
+        android:contentDescription="second_button"
+        android:paddingBottom="@dimen/_50sdp"
+        android:paddingRight="@dimen/_40sdp"
+        android:src="@drawable/adidas_yeezy"
+        android:paddingLeft="@dimen/_20sdp"
+        app:layout_constraintStart_toEndOf="@id/adidasbrandsuperstar_Btn"
+        app:layout_constraintTop_toTopOf="@id/adidasbrandsuperstar_Btn" />
+
+    <TextView
+        android:id="@+id/adidasbrandyeezy_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adidas Yeezy 350"
+        android:textSize="@dimen/_14ssp"
+        android:fontFamily="@font/helveticanowtextbold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/adidasbrandyeezy_Btn"
+        app:layout_constraintStart_toStartOf="@id/adidasbrandyeezy_Btn"
+        app:layout_constraintEnd_toEndOf="@id/adidasbrandyeezy_Btn"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

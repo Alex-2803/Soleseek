@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/solseeker"
+        android:layout_width="@dimen/_134sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:contentDescription="screenshot_2023_05_30_19_50_52_421_com_android_1"
+        android:src="@drawable/solelogo"
+        app:layout_constraintDimensionRatio="H,250:125.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/image_slider"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_155sdp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/indicator_layout"
+        android:layout_width="@dimen/_27sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_slider"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/shoeBrandButton"
+        android:layout_width="@dimen/_265sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/btn_rounded"
+        android:drawableLeft="@drawable/image_109"
+        android:drawablePadding="@dimen/_8sdp"
+        android:paddingStart="@dimen/_50sdp"
+        android:text="Shoe Brand"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@color/black"
+        android:onClick="onClickShoeBrandButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/indicator_layout" />
+
+    <Button
+        android:id="@+id/scanBrandButton"
+        android:layout_width="@dimen/_265sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/btn_rounded"
+        android:drawableLeft="@drawable/image_108"
+        android:drawablePadding="@dimen/_8sdp"
+        android:paddingStart="@dimen/_50sdp"
+        android:text="Scan Brand"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shoeBrandButton" />
+
+    <Button
+        android:id="@+id/shoeSizingButton"
+        android:layout_width="@dimen/_265sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/btn_rounded"
+        android:drawableLeft="@drawable/image_110"
+        android:drawablePadding="@dimen/_8sdp"
+        android:fontFamily="@font/montserratbold"
+        android:paddingStart="50dp"
+        android:text="Shoe Sizing"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scanBrandButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
