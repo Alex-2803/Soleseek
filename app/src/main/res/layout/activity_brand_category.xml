@@ -57,8 +57,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="@dimen/_75sdp"
-            android:paddingBottom="@dimen/_15sdp">
+            android:layout_marginTop="@dimen/_75sdp">
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tabMen"
@@ -66,7 +65,9 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="men"
                 android:text="Men"
+                android:fontFamily="@font/helveticanowtextbold"
                 android:textSize="@dimen/_15ssp"
+                android:background="#00000000"
                 tools:layout_editor_absoluteX="@dimen/_-4sdp"
                 tools:layout_editor_absoluteY="@dimen/_71sdp" /> <!-- Adjust the text size here -->
 
@@ -75,14 +76,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Women"
+                android:background="#00000000"
+                android:fontFamily="@font/helveticanowtextbold"
                 android:contentDescription="women"
-                android:textSize="@dimen/_15sdp"  /> <!-- Adjust the text size here -->
+                android:textSize="@dimen/_15sdp" /> <!-- Adjust the text size here -->
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tabBrand"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="By Brand"
+                android:background="#00000000"
+                android:fontFamily="@font/helveticanowtextbold"
                 android:contentDescription="by brand"
                 android:textSize="@dimen/_15ssp" />
 
@@ -93,10 +98,10 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
             android:contentDescription="view Pager"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tabLayout"
-            app:layout_constraintVertical_bias="0.0"
-            tools:layout_editor_absoluteX="@dimen/_-16sdp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="@dimen/_0sdp" >
 
         </androidx.viewpager.widget.ViewPager>
 
