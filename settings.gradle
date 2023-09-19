@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 rootProject.name = "Soleseek"
 include ':app'
 include ':lib'
+include ':OpenCV4'
+include ':nativetemplates'

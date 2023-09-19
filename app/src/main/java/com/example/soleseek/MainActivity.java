@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int[] sliderImages = {
             R.drawable.image_slide1,  // Replace with the resource IDs of your background images
-            R.drawable.image_slide2,
+            R.drawable.image_slides2,
             R.drawable.image_slide3,
     };
 

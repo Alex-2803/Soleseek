@@ -16,8 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
-import com.example.soleseek.Scan;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -105,8 +103,10 @@ public class main_menu_activity extends AppCompatActivity {
         scanBrandButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(main_menu_activity.this, Scan.class);
+                Intent intent = new Intent(main_menu_activity.this, scan_brand_activity.class);
                 startActivity(intent);
+
+
             }
         });
 

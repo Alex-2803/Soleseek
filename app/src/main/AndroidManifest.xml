@@ -5,6 +5,10 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- permission for internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:allowBackup="true"
@@ -101,14 +105,9 @@
                 android:value=".main_menu_activity" />
         </activity>
         <activity
-            android:name=".Scan"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.SCAN" />
+            android:name=".scan_brand_activity"
+            android:exported="false" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
     </application>
 
